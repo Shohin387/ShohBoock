@@ -1,0 +1,109 @@
+body {
+    background-color: #242424;
+    color:aliceblue;
+    margin: 0;
+    padding:0;
+    padding-top: 70px;
+    padding-bottom: 95px;
+}
+
+* {
+    color: #ffffff;
+    
+}
+
+.divForHideOpacity {
+    width: 100%;
+    height: 78px;
+    z-index: 0;
+    opacity: 1;
+    background: #181818;
+    position: fixed;
+    top: 0px;
+}
+
+.Header {
+   
+    z-index: 100;
+    position: fixed;
+    top: -20px;
+    width: 100%;
+    height: 90px;
+    background-color: #18181815;
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    background: #181818;
+    padding-left: 20PX;
+    padding: 15px;
+    position: relative;
+    opacity: 0.8;
+    
+}
+
+.HeaderList {
+    width: 27px;
+    height: 27px;
+    background-color: #f7050500;
+    margin-right:30px ; 
+    display: inline-block;
+}
+
+.navigate {
+    height: 4px;
+    width: 23px;
+    background-color: #d10505;
+    border-radius: 10px;
+    box-shadow: 0px -6px 8px 3px  #c90303;
+    position: relative;
+    left:2px;
+    transition: all 1s ease;
+
+}
+
+.navigateForHome {
+    position: relative;
+    left: 59.5px;
+    transition: all 1s ease;
+}
+
+.navigateAnim {
+    animation-name:navigateAnim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes navigateAnim {
+    0% {
+        box-shadow: 0px -6px 8px 3px  #c90303;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0px -6px 8px 3px  #c90303;
+    }
+}
+
+.mainPanel {
+    position: fixed;
+    top:92%;
+    width: 100%;
+    background-color: #1d1d1d;
+    z-index: 12;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hrForMainPanel {
+    position: fixed;
+    background-color: #0f0f0f;
+    top:92%;
+    width: 100%;
+    margin: 0;
+    height: 3px;
+    z-index: 13;
+}

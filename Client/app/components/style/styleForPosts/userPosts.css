@@ -1,0 +1,243 @@
+
+#UserPosts {
+    background-color: #181818;
+    color:aliceblue;
+    margin-bottom: 20px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  
+    
+}
+
+.nameUse {
+    position: relative;
+    top:-40px;
+}
+
+.buttonDelPost:not(:last-child) {
+    margin-top:43px;
+}
+
+.buttonDelPost {
+    display: block;
+    z-index: 10;
+    font-size: 13px;
+    top:17px;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 25.5px;
+    background-color: #181818;
+    color: rgba(221, 221, 221, 0.904);
+    text-align: center;
+    padding-top: 8.75px;
+    transition: all .6s ease;
+    border:2.5px solid rgba(224, 5, 5, 0.884);
+    animation-name:animOptions;
+    animation-duration: 1s;
+}
+
+hr {
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.edit {
+    border-radius: 0px 0 10px 10px ;
+}
+
+.buttonDelPost:hover {
+    cursor:pointer;
+    transform: scale(1.07);
+    color: white;
+    border:2.5px solid red;
+
+}
+
+.buttonDelPost:active {
+    transition: all .1s ease;
+    transform: scale(1)
+}
+
+.options {
+    position: relative;
+    left: 345px;
+    top:23px;
+    z-index: 12;
+    width: 20px;
+    height: 25px;
+    transition: all .4s ease;
+    display: flex;
+}
+
+@keyframes animOptionsBlock {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        width: 125px;
+        height: 125px;
+        
+    }
+
+    100% {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+@keyframes animOptions {
+    0% {
+        width: 0px;
+        height: 0px;
+        font-size: 0;
+    }
+
+    50% {
+        width: 123px;
+        height: 27.5px;
+        font-size: 14.5px;
+    }
+
+    100% {
+        width: 117px;
+        height: 25.5px;
+        font-size: 13px;
+    }
+}
+
+
+.optionsBlock {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-left: 335px;
+    margin-top: -8px;
+    background-color: #1d1d1dce;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    border-radius: 10px;
+    animation-name:animOptionsBlock;
+    animation-duration: 1s;
+    
+}
+
+.options:hover {
+    transform: scale(1.13);
+    box-shadow: 2, 2, 2, 2 #bc25f8;
+    cursor: pointer;
+}
+
+.timePost {
+    background-color: #181818;
+    opacity: 0.9;
+    max-width: 60px;
+    position: relative;
+    bottom: 10px;
+    left: 25px;
+    height: 40px;
+}
+
+hr {
+    position: relative;
+    bottom: 27px;
+    width: 320px;
+    border-radius: 80px;
+    border: none;
+    background-color: #242424;
+    color: #313131;
+    height: 3px;
+}
+
+.MainBlockUserPost {
+    position: relative;
+    max-width: 400px;
+    left: 470px;
+    top: 50px;
+}
+
+.poster {
+    margin-left: 25px;
+    position: relative;
+    bottom:20px;
+    max-width: 360px;
+    background-color: #181818;
+    word-wrap: break-word;
+    
+}
+
+.poster b {
+    background-color: #181818;
+    max-width: 370px;
+    font-size: 19px;
+    position: relative;
+    top: 10px;
+}
+
+.myPosts {
+    height: 40px;
+    position: relative;
+    
+    left: 5px;
+    bottom: 25px;
+    margin-bottom: -10px;
+    padding-left: 20px;
+}
+
+.noMyPosts {
+
+    height: 40px;
+    position: relative;
+    margin-bottom: 34px;
+    left: 10px;
+    top: 18px;
+    padding-left: 20px;
+
+}
+
+div h2 a {
+    background-color: #181818;
+    text-decoration: none;
+}
+
+.ButtonLike {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+    transition: all .3s ease;
+    background-color: #181818;
+
+}
+
+.ButtonLike:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.countLike {
+    font-size: 24px;
+    position: relative;
+    bottom: 1.4px;
+    
+
+}
+
+.blockLike {
+    border:2px solid rgb(56, 56, 56);
+    width: 50px;
+    margin-left: 285px;
+    position: relative;
+    top: 27px;
+    height: 30px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #181818;
+
+}
